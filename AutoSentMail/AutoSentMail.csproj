@@ -7,8 +7,8 @@
     <ProjectGuid>{B72C6D5E-754B-46BF-8FBE-2C3F6506B6C5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>snmail</RootNamespace>
-    <AssemblyName>snmail</AssemblyName>
+    <RootNamespace>AutoSentMail</RootNamespace>
+    <AssemblyName>AutoSentMail</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -63,6 +63,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

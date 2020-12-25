@@ -40,9 +40,9 @@ namespace snmail
                 //gmail >> smtp server : smtp.gmail.com, port : 587 , ssl required
                 //yahoo >> smtp server : smtp.mail.yahoo.com, port : 587 , ssl required
                 SmtpClient clientDetails = new SmtpClient();
-                clientDetails.Port = Convert.ToInt32(txtPortNumber.Text.Trim());
-                clientDetails.Host = txtSmtpServer.Text.Trim();
-                clientDetails.EnableSsl = cbxSSL.Checked;
+                clientDetails.Port = 587;
+                clientDetails.Host = "smtp.gmail.com";
+                clientDetails.EnableSsl = true;
                 clientDetails.DeliveryMethod = SmtpDeliveryMethod.Network;
                 clientDetails.UseDefaultCredentials = false;
                 clientDetails.Credentials = new NetworkCredential(txtSenderEmail.Text.Trim(),txtSenderPassword.Text.Trim());
@@ -56,7 +56,6 @@ namespace snmail
                 //for bcc
                 //mailDetails.Bcc.Add("bcc email address")
                 mailDetails.Subject = txtSubject.Text.Trim();
-                mailDetails.IsBodyHtml = cbxHtmlBody.Checked;
                 mailDetails.Body = rtbBody.Text.Trim();
 
 
